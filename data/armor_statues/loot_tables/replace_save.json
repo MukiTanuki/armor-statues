@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+	  "rolls": 1,
+	  "entries": [
+	    {
+		  "type": "minecraft:item",
+		  "name": "minecraft:written_book",
+		  "functions": [
+		    {
+			  "function": "minecraft:copy_nbt",
+			  "source": "this",
+			  "ops": [
+			    {
+			      "source": "HandItems[1].tag",
+				  "target": "{}",
+				  "op": "merge"
+				}
+			  ]
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [
+				  {
+				    "selector": "@e[type=armor_stand,limit=1,sort=nearest,tag=as_selected]"
+				  },
+				  {
+				    "text": " Pose +"
+				  }
+				]
+			  ],
+			  "entity": "this",
+			  "replace": "true"
+			},
+			{
+			  "function": "minecraft:set_count",
+			  "count": 0
+			},
+			{
+			  "function": "minecraft:looting_enchant",
+			  "count":1
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
