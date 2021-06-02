@@ -3,7 +3,7 @@
 1. This datapack uses a book of clickable links to modify the settings and pose of armour stands.
 2. Once the datapack is installed, use "/trigger as_help" to see how to obtain the book.
    By default this is by clicking a link in the help text but this can be changed in the admin settings.
-3. Admin settings are available using "/function as:admin" command and include:
+3. Admin settings are available using "/function armor_statues:admin" command and include:
     - Creating and removing a particle shrine for obtaining the book.
     - Enabling and disabling a crafting method for obtaining the book.
     - Enabling and disabling the link in the help text for obtaining the book.
