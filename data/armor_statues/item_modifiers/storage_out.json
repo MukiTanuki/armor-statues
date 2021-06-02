@@ -1,0 +1,16 @@
+[
+	{
+		"function": "minecraft:copy_nbt",
+		"source": {
+			"type": "storage",
+			"source": "customizable_armor_stands:book_storage"
+		},
+		"ops": [
+			{
+				"source": "SavedItem",
+				"target": "[]",
+				"op": "replace"
+			}
+		]
+	}
+]
