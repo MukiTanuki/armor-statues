@@ -19,7 +19,7 @@ execute as @a[scores={if_invisible=1..}] at @s run function armor_statues:if_tri
 #
 # Makes empty invisible item frames visible
 #
-execute as @e[type=item_frame,tag=if_invisible,nbt=!{Item:{Count:1b}}] run function armor_statues:item_frames/visible
+execute as @e[type=#armor_statues:item_frames,tag=if_invisible,nbt=!{Item:{Count:1b}}] run function armor_statues:item_frames/visible
 #
 # Check for players at the particle shrine
 #

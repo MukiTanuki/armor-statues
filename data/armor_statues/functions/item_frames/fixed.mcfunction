@@ -1,7 +1,7 @@
 #
 # Description:	turns item frame invisible
 # Called by:	armor_statues:if_trigger
-# Entity @s:	item frame
+# Entity @s:	#item frame
 #
 # Makes item frame fixed
 #
