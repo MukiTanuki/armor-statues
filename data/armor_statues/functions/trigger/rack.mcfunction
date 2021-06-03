@@ -49,6 +49,11 @@ execute if entity @s[tag=as_rack] run execute store result score @s as_lock_uuid
 execute if entity @s[tag=as_rack] run execute store result score @s as_lock_uuid4 run data get entity @p[tag=as_selected] UUID[3]
 execute if entity @s[tag=as_rack] run tag @s add as_uuid_locked
 #
+# add tool rack tag
+#
+execute if entity @s[tag=as_rack] run tag @s add as_tool_rack
+execute if entity @s[tag=as_rack] run tag @s add as_invisible
+#
 # Finally, remove the as_rack tag
 #
 execute if entity @s[tag=as_rack] run tag @s remove as_rack

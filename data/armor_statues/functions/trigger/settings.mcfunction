@@ -12,7 +12,9 @@ execute if entity @s[scores={as_trigger=6}] run data merge entity @s {Small:0b}
 execute if entity @s[scores={as_trigger=7}] run data merge entity @s {NoGravity:0b}
 execute if entity @s[scores={as_trigger=8}] run data merge entity @s {NoGravity:1b}
 execute if entity @s[scores={as_trigger=9}] run data merge entity @s {Invisible:0b}
+execute if entity @s[scores={as_trigger=9}] run tag @s remove as_invisible
 execute if entity @s[scores={as_trigger=10}] run data merge entity @s {Invisible:1b}
+execute if entity @s[scores={as_trigger=10}] run tag @s add as_invisible
 execute if entity @s[scores={as_trigger=11}] run data merge entity @s {CustomNameVisible:1b}
 execute if entity @s[scores={as_trigger=12}] run data merge entity @s {CustomNameVisible:0b}
 #

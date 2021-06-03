@@ -23,6 +23,7 @@ execute if entity @s[scores={as_trigger=153}] at @s run tp @s ^0.385 ^-0.78 ^-0.
 execute if entity @s[scores={as_trigger=154}] run data merge entity @s {ShowArms:1b,NoGravity:1b,Invisible:1b,Pose:{Head:[0.0f,0.001f,0.0f],Body:[0.0f,0.001f,0.0f],RightArm:[-10.0f,0.0f,-90.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}
 execute if entity @s[scores={as_trigger=154}] at @s run tp @s ^-0.17 ^-1.285 ^-0.44
 #
-# Tag the armor stand as modified
+# Tag the armor stand as modified and invisible
 #
+tag @s add as_invisible
 tag @s add as_modified
