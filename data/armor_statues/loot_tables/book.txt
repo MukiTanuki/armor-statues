@@ -14,6 +14,7 @@
 			    title:\"Statues V2.9\",
 				author:\"Stick God\",
 				datapack:\"ArmorStatuesV2\",
+				CustomModelData:10, 
 				pages:[
 				  '[
 					{\"text\":\"      \",\"color\":\"white\"},
