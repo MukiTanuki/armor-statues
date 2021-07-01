@@ -14,7 +14,7 @@ data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPo
 data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPose.Invisible set from entity @s Invisible
 data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPose.CustomNameVisible set from entity @s CustomNameVisible
 #
-execute as @p[tag=as_selected] run function armor_statues:storage_out_copy
+execute as @p[tag=as_selected] run function armor_statues:storage_out
 #
 title @a[tag=as_selected,tag=!as_chat] actionbar [{"selector":"@s","color":"dark_green"}, {"text":" Pose and settings copied to the book","color":"dark_green"}]
 tellraw @a[tag=as_selected,tag=as_chat] [{"text":"<Stick_God> ","color":"dark_green"}, {"selector":"@s","color":"dark_green"}, {"text":" Pose and settings copied to the book","color":"dark_green"}]

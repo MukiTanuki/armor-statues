@@ -7,8 +7,13 @@
 		},
 		"ops": [
 			{
-				"source": "SavedItem",
-				"target": "[]",
+				"source": "SavedItem.tag",
+				"target": "{}",
+				"op": "merge"
+			},
+			{
+				"source": "SavedItem.tag.SavedPose",
+				"target": "SavedPose",
 				"op": "replace"
 			}
 		]

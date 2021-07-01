@@ -17,6 +17,7 @@ tellraw @s [{"text":"Max Undo States: ","color":"aqua","hoverEvent":{"action":"s
 #
 tellraw @s [{"text":"Item Frame animation time: ","color":"aqua","hoverEvent":{"action":"show_text","contents":[{"text":"Enables Armor Stand animations by placing a book with a saved pose into an item frame with redstone dust on the block.  Requires an Armor Stand to be 8 blocks from the item frame.  Sets the number of game ticks between animation time of the item frames.\n(16 is recommended for most mid-sized servers.)\nSet to 0 to disable animations.","color":"yellow"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set #animate_trigger as_angle <time>"}},{"score":{"name":"#animate_trigger","objective":"as_angle"},"color":"green"}]
 #
+# REDO this at some point!
 #tellraw @s [{"text":"Reduce local server load","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Sets the Marker tag on all locked armor stands within 128 blocks. This reduces the load on the server from ticking the entities but makes the stands unaffected by entity updates such as being pushed by pistons. The Marker tag can be reset for individual stands by unlocking them.","color":"yellow"}]},"clickEvent":{"action":"run_command","value":"/function armor_statues:admin/marker"}}]
 tellraw @s [{"text":"--------------------------","color":"yellow","bold":"true"}]
 #
