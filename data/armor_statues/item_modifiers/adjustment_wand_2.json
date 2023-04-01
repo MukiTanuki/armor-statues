@@ -1,0 +1,29 @@
+[
+	{
+		"function": "minecraft:set_nbt",
+		"tag":"{wand:1, Enchantments: [{}]}"
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag":"{type:2}"
+	},
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"text": "Adjustment Wand: Z axis"
+		}
+	},
+	{
+		"function": "minecraft:set_lore",
+		"entity": "this",
+		"lore": [
+		  ["",
+		  {"keybind":"key.sneak"},
+		  {"text":"+"},
+		  {"keybind":"key.use"},
+		  {"text":" to set mode"}]
+		],
+		"replace": true
+	  }
+]

@@ -11,6 +11,8 @@ scoreboard objectives add as_angle dummy
 scoreboard objectives add as_help trigger
 scoreboard objectives add if_invisible trigger
 scoreboard objectives add as_repeat trigger
+scoreboard objectives add pointer_wand trigger
+scoreboard objectives add adjustment_wand trigger
 scoreboard objectives add as_edited_uuid1 dummy
 scoreboard objectives add as_edited_uuid2 dummy
 scoreboard objectives add as_edited_uuid3 dummy
@@ -19,6 +21,12 @@ scoreboard objectives add as_lock_uuid1 dummy
 scoreboard objectives add as_lock_uuid2 dummy
 scoreboard objectives add as_lock_uuid3 dummy
 scoreboard objectives add as_lock_uuid4 dummy
+scoreboard objectives add as_uuid1 dummy
+scoreboard objectives add as_uuid2 dummy
+scoreboard objectives add as_uuid3 dummy
+scoreboard objectives add as_uuid4 dummy
+scoreboard objectives add as_current_pose dummy
+scoreboard objectives add as_wand_used minecraft.used:minecraft.warped_fungus_on_a_stick
 #
 # Resets triggers on reload
 #
@@ -26,6 +34,8 @@ scoreboard players enable * as_trigger
 scoreboard players enable * as_help
 scoreboard players enable * if_invisible
 scoreboard players enable * as_repeat
+scoreboard players enable * pointer_wand
+scoreboard players enable * adjustment_wand
 #
 # Variables
 #

@@ -15,8 +15,10 @@ execute if entity @s[scores={as_trigger=9}] run data merge entity @s {Invisible:
 execute if entity @s[scores={as_trigger=9}] run tag @s remove as_invisible
 execute if entity @s[scores={as_trigger=10}] run data merge entity @s {Invisible:1b}
 execute if entity @s[scores={as_trigger=10}] run tag @s add as_invisible
-execute if entity @s[scores={as_trigger=11}] run data merge entity @s {CustomNameVisible:1b}
-execute if entity @s[scores={as_trigger=12}] run data merge entity @s {CustomNameVisible:0b}
+#execute if entity @s[scores={as_trigger=11}] run data merge entity @s {CustomNameVisible:1b}
+#execute if entity @s[scores={as_trigger=12}] run data merge entity @s {CustomNameVisible:0b}
+execute if entity @s[scores={as_trigger=13}] run data merge entity @s {HasVisualFire:1b}
+execute if entity @s[scores={as_trigger=14}] run data merge entity @s {HasVisualFire:0b}
 #
 # Tag the armor stand as modified
 #

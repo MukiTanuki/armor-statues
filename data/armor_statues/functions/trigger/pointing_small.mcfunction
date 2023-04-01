@@ -6,11 +6,11 @@
 # Summons temp armor stand
 #
 # Head
-execute if score @s as_trigger matches 1160 rotated ~ 0 run summon minecraft:armor_stand ^ ^-0.28125 ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
-execute if score @s as_trigger matches 1166 rotated ~ 0 run summon minecraft:armor_stand ^ ^-0.28125 ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
+execute if score @s as_trigger matches 1160 rotated ~ 0 run summon minecraft:armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
+execute if score @s as_trigger matches 1166 rotated ~ 0 run summon minecraft:armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
 # Body
-execute if score @s as_trigger matches 1161 rotated ~ 0 run summon minecraft:armor_stand ^ ^-0.25 ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
-execute if score @s as_trigger matches 1167 rotated ~ 0 run summon minecraft:armor_stand ^ ^-0.25 ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
+execute if score @s as_trigger matches 1161 rotated ~ 0 run summon minecraft:armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
+execute if score @s as_trigger matches 1167 rotated ~ 0 run summon minecraft:armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
 # Right Arm
 execute if score @s as_trigger matches 1162 rotated ~ 0 run summon minecraft:armor_stand ^-0.171875 ^-0.28125 ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
 execute if score @s as_trigger matches 1168 rotated ~ 0 run summon minecraft:armor_stand ^-0.171875 ^-0.28125 ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["as_temp_armor_stand"],DisabledSlots:4144959,Silent:1b}
@@ -33,19 +33,31 @@ execute store result score #selected_as_x as_angle run data get entity @s Rotati
 execute store result score #selected_as_z as_angle run data get entity @s Rotation[1] 1000
 scoreboard players operation #temp_as_x as_angle -= #selected_as_x as_angle
 # Appendage offset
-scoreboard players operation #temp_as_z as_angle -= #var90000 as_angle
-# Head rotation offset
-execute if score @s as_trigger matches 1160 run scoreboard players operation #temp_as_z as_angle += #var180000 as_angle
-execute if score @s as_trigger matches 1166 run scoreboard players operation #temp_as_z as_angle += #var180000 as_angle
+execute if score @s as_trigger matches 1162..1165 run scoreboard players operation #temp_as_z as_angle -= #var90000 as_angle
+execute if score @s as_trigger matches 1168..1171 run scoreboard players operation #temp_as_z as_angle -= #var90000 as_angle
+# Head rotation offset (UNUSED)
+#execute if score @s as_trigger matches 1160 run scoreboard players operation #temp_as_z as_angle += #var180000 as_angle
+#execute if score @s as_trigger matches 1166 run scoreboard players operation #temp_as_z as_angle += #var180000 as_angle
 #
-execute if score #temp_as_x as_angle matches 180000.. run scoreboard players operation #temp_as_x as_angle -= #var360000 as_angle
-execute if score #temp_as_x as_angle matches ..-180000 run scoreboard players operation #temp_as_x as_angle += #var360000 as_angle
-execute if score #temp_as_x as_angle matches 90000.. run scoreboard players operation #temp_as_z as_angle *= #var-1 as_angle
-execute if score #temp_as_x as_angle matches ..-90000 run scoreboard players operation #temp_as_z as_angle *= #var-1 as_angle
-execute if score #temp_as_x as_angle matches 90000.. run scoreboard players operation #temp_as_x as_angle -= #var180000 as_angle
-execute if score #temp_as_x as_angle matches ..-90000 run scoreboard players operation #temp_as_x as_angle += #var180000 as_angle
+# Mirror rotation so arms and legs rotate facing the right
+#
+execute if score @s as_trigger matches 1162..1165 if score #temp_as_x as_angle matches 180000.. run scoreboard players operation #temp_as_x as_angle -= #var360000 as_angle
+execute if score @s as_trigger matches 1162..1165 if score #temp_as_x as_angle matches ..-180000 run scoreboard players operation #temp_as_x as_angle += #var360000 as_angle
+execute if score @s as_trigger matches 1162..1165 if score #temp_as_x as_angle matches 90000.. run scoreboard players operation #temp_as_z as_angle *= #var-1 as_angle
+execute if score @s as_trigger matches 1162..1165 if score #temp_as_x as_angle matches ..-90000 run scoreboard players operation #temp_as_z as_angle *= #var-1 as_angle
+execute if score @s as_trigger matches 1162..1165 if score #temp_as_x as_angle matches 90000.. run scoreboard players operation #temp_as_x as_angle -= #var180000 as_angle
+execute if score @s as_trigger matches 1162..1165 if score #temp_as_x as_angle matches ..-90000 run scoreboard players operation #temp_as_x as_angle += #var180000 as_angle
+#
+execute if score @s as_trigger matches 1168..1171 if score #temp_as_x as_angle matches 180000.. run scoreboard players operation #temp_as_x as_angle -= #var360000 as_angle
+execute if score @s as_trigger matches 1168..1171 if score #temp_as_x as_angle matches ..-180000 run scoreboard players operation #temp_as_x as_angle += #var360000 as_angle
+execute if score @s as_trigger matches 1168..1171 if score #temp_as_x as_angle matches 90000.. run scoreboard players operation #temp_as_z as_angle *= #var-1 as_angle
+execute if score @s as_trigger matches 1168..1171 if score #temp_as_x as_angle matches ..-90000 run scoreboard players operation #temp_as_z as_angle *= #var-1 as_angle
+execute if score @s as_trigger matches 1168..1171 if score #temp_as_x as_angle matches 90000.. run scoreboard players operation #temp_as_x as_angle -= #var180000 as_angle
+execute if score @s as_trigger matches 1168..1171 if score #temp_as_x as_angle matches ..-90000 run scoreboard players operation #temp_as_x as_angle += #var180000 as_angle
+# unused
 #scoreboard players operation #temp_as_x as_angle *= #var-1 as_angle
 #scoreboard players operation #temp_as_z as_angle *= #var-1 as_angle
+#
 data modify storage customizable_armor_stands:appendage appendage set value [0f,0f,0f]
 execute store result storage customizable_armor_stands:appendage appendage[1] float 0.001 run scoreboard players get #temp_as_x as_angle
 execute store result storage customizable_armor_stands:appendage appendage[0] float 0.001 run scoreboard players get #temp_as_z as_angle

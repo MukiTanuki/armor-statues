@@ -11,15 +11,15 @@
 		    {
 			  "function": "minecraft:set_nbt",
 			  "tag": "{
-			    title:\"Statues V2.9\",
+			    title:\"Statues V2.10\",
 				author:\"Stick God\",
 				datapack:\"ArmorStatuesV2\",
 				CustomModelData:10, 
 				pages:[
 				  '[
 					{\"text\":\"      \",\"color\":\"white\"},
-					{\"text\":\"Statues V2.9\",\"color\":\"dark_blue\"},
-					{\"text\":\"    \",\"color\":\"white\"},
+					{\"text\":\"Statues V2.10\",\"color\":\"dark_blue\"},
+					{\"text\":\"   \",\"color\":\"white\"},
 					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"This book allows you to apply basic settings to an armor stand. Clicking the coloured links will adjust the closest armor stand within three blocks.\",\"color\":\"yellow\"}]}},
 					
 					{\"text\":\"\\\\n         \",\"color\":\"white\"},
@@ -93,11 +93,11 @@
 					{\"text\":\"Yes\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 9\"}},
 					{\"text\":\" / \",\"color\":\"black\"},
 					{\"text\":\"No\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 10\"}},
-					{\"text\":\"\\\\nDisplay Name:\",\"color\":\"black\"},
+					{\"text\":\"\\\\nHas Visual Fire:\",\"color\":\"black\"},
 					{\"text\":\"\\\\n        \",\"color\":\"white\"},
-					{\"text\":\"Yes\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 11\"}},
+					{\"text\":\"Yes\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 13\"}},
 					{\"text\":\" / \",\"color\":\"black\"},
-					{\"text\":\"No\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 12\"}}
+					{\"text\":\"No\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 14\"}}
 				  ]',
 				  '[
 				    \"\",
@@ -234,7 +234,8 @@
 					{\"text\":\"Pointing\",\"color\":\"dark_blue\"},
 					{\"text\":\"       \",\"color\":\"white\"},
 					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Points selected appendage at head or feet.\",\"color\":\"yellow\"}]}},
-					{\"text\":\"\\\\n\\\\n\",\"color\":\"white\"},
+					{\"text\":\"\\\\nGet Pointer Wand\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger pointer_wand\"}},
+					{\"text\":\"\\\\n\",\"color\":\"white\"},
 					{\"text\":\"Head:\",\"color\":\"black\"},
 					{\"text\":\"    .\",\"color\":\"white\"},
 					{\"text\":\"Head\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 1160\"}},
@@ -321,7 +322,8 @@
 					{\"text\":\"Pose Adjustment\",\"color\":\"dark_blue\"},
 					{\"text\":\" \",\"color\":\"white\"},
 					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"The angle step set for adjusting the stand rotation is also used for the pose adjustments.\",\"color\":\"yellow\"}]}},
-					{\"text\":\"\\\\n\\\\n          .\",\"color\":\"white\"},
+					{\"text\":\"\\\\nGet Adjustment Wand\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger adjustment_wand\"}},
+					{\"text\":\"\\\\n          .\",\"color\":\"white\"},
 					{\"text\":\"X\",\"color\":\"black\"},
 					{\"text\":\"     .\",\"color\":\"white\"},
 					{\"text\":\"Y\",\"color\":\"black\"},

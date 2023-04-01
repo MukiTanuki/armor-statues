@@ -1,0 +1,44 @@
+
+{
+  "type": "minecraft:loot",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{wand:1, Enchantments: [{}]}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{type:0}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Adjustment Wand: X axis"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                ["",
+                {"keybind":"key.sneak"},
+                {"text":"+"},
+                {"keybind":"key.use"},
+                {"text":" to set mode"}]
+              ],
+              "replace": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

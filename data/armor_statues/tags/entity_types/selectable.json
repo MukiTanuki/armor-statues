@@ -1,0 +1,17 @@
+{
+	"replace": "false",
+	"values": [
+		{
+			"id": "minecraft:armor_stand",
+			"required": "true"
+		},
+		{
+			"id": "minecraft:interaction",
+			"required": "true"
+		},
+		{
+			"id": "minecraft:block_display",
+			"required": "true"
+		}
+	]
+}

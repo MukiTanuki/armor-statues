@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "interact": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "armor_statues:holding_wand"
+                }],
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags: [ \"as_interactable\" ]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+        "interact"
+        ]
+    ],
+    "rewards": {
+        "function": "armor_statues:interactions/interact"
+    }
+}

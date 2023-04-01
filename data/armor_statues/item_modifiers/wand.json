@@ -1,0 +1,16 @@
+[
+	{
+		"function": "minecraft:copy_nbt",
+		"source": {
+			"type": "context",
+			"target": "this"
+		},
+		"ops": [
+			{
+				"source": "UUID",
+				"target": "LastUsed",
+				"op": "replace"
+			}
+		]
+	}
+]

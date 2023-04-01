@@ -7,7 +7,7 @@
 #
 # Rotate the armor stand to face the selected player
 #
-tp @s ~ ~ ~ facing entity @a[distance=..3,tag=as_selected,limit=1]
+tp @s ~ ~ ~ facing entity @a[distance=..7,tag=as_selected,limit=1]
 #
 # If stand is required to face away from the player, add 180 to the rotation
 #

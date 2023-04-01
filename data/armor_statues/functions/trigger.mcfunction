@@ -26,7 +26,7 @@ execute if entity @s[scores={as_trigger=999}] as @e[type=armor_stand,tag=as_sele
 #
 # armor stand settings
 #
-execute if entity @s[scores={as_trigger=1..12}] as @e[type=armor_stand,tag=as_selected] run function armor_statues:trigger/settings
+execute if entity @s[scores={as_trigger=1..14}] as @e[type=armor_stand,tag=as_selected] run function armor_statues:trigger/settings
 #
 # Nudge position
 #

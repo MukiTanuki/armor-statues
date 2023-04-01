@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "attack": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "armor_statues:holding_wand"
+                }],
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags: [ \"as_interactable\" ]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+        "attack"
+        ]
+    ],
+    "rewards": {
+        "function": "armor_statues:interactions/attack"
+    }
+}
