@@ -9,8 +9,8 @@ function armor_statues:repeat/save_redo_state
 #
 # Copies last undo state to armor stand
 #
-data modify entity @e[type=minecraft:armor_stand,sort=nearest,limit=1] {} merge from storage customizable_armor_stands:book_storage SavedItem.tag.UndoStates[0]
-data modify entity @e[type=minecraft:armor_stand,sort=nearest,limit=1] Pose set from storage customizable_armor_stands:book_storage SavedItem.tag.UndoStates[0].Pose
+data modify entity @e[type=minecraft:armor_stand,sort=nearest,limit=1,tag=as_selected] {} merge from storage customizable_armor_stands:book_storage SavedItem.tag.UndoStates[0]
+data modify entity @e[type=minecraft:armor_stand,sort=nearest,limit=1,tag=as_selected] Pose set from storage customizable_armor_stands:book_storage SavedItem.tag.UndoStates[0].Pose
 #
 # Deletes undo state state
 #
