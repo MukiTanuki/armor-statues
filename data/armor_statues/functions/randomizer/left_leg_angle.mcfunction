@@ -1,6 +1,6 @@
 # 
 # Description:	adjusts probability
-# Called by:	armor_statues:randomizer/left_leg
+# Called by:	UNUSED
 # Entity @s:	temp armor stand
 #
 scoreboard players set #x_negative as_angle 0

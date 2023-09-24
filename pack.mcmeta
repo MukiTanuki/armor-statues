@@ -1,6 +1,10 @@
 {
 	"pack": {
-		"pack_format": 15,
+		"pack_format": 18,
+		"supported_formats": {
+			"min_inclusive": 18,
+			"max_inclusive": 18
+		},
 		"description": [{"text":"Armor Statues","color":"gold"},{"text":"\n","color":"yellow"}]
 	}
 }
