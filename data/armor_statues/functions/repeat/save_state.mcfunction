@@ -5,10 +5,22 @@
 #
 # Checks if UUID of armor stand matches that of the book
 #
+#scoreboard players set #as_success as_angle 0
+#execute store success score #as_success as_angle run data modify storage customizable_armor_stands:book_storage SavedItem.tag.StatesUUID set from entity @e[type=armor_stand,sort=nearest,limit=1,tag=as_selected] UUID
+#execute if score #as_success as_angle matches 1 run data remove storage customizable_armor_stands:book_storage SavedItem.tag.UndoStates
+#data remove storage customizable_armor_stands:book_storage SavedItem.tag.RedoStates
+
+# checks if uuid matches armor stand
 scoreboard players set #as_success as_angle 0
-execute store success score #as_success as_angle run data modify storage customizable_armor_stands:book_storage SavedItem.tag.StatesUUID set from entity @e[type=armor_stand,sort=nearest,limit=1,tag=as_selected] UUID
-execute if score #as_success as_angle matches 1 run data remove storage customizable_armor_stands:book_storage SavedItem.tag.UndoStates
-data remove storage customizable_armor_stands:book_storage SavedItem.tag.RedoStates
+data remove storage customizable_armor_stands:uuid_check UUID
+data modify storage customizable_armor_stands:uuid_check UUID set from storage customizable_armor_stands:book_storage SavedItem.tag.StatesUUID
+execute store result score #as_success as_angle \
+    as @e[type=armor_stand,sort=nearest,limit=1,tag=as_selected] run \
+    function armor_statues:uuid_check with storage customizable_armor_stands:uuid_check {}
+#
+execute if score #as_success as_angle matches 0 run data modify storage customizable_armor_stands:book_storage SavedItem.tag.UndoStates set value []
+execute if score #as_success as_angle matches 0 run data modify storage customizable_armor_stands:book_storage SavedItem.tag.StatesUUID set from entity @e[type=armor_stand,sort=nearest,limit=1,tag=as_selected] UUID
+data modify storage customizable_armor_stands:book_storage SavedItem.tag.RedoStates set value []
 #
 # Counts undo states and makes sure they're less than the maximum undo states
 #
