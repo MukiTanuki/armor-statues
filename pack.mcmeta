@@ -3,8 +3,19 @@
 		"pack_format": 18,
 		"supported_formats": {
 			"min_inclusive": 18,
-			"max_inclusive": 18
+			"max_inclusive": 26
 		},
 		"description": [{"text":"Armor Statues","color":"gold"},{"text":"\n","color":"yellow"}]
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "1_20_3",
+				"formats": {
+					"min_inclusive": 19,
+					"max_inclusive": 9999999
+				}
+			}
+		]
 	}
 }

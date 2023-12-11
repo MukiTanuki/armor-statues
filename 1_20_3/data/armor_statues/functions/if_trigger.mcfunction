@@ -1,0 +1,42 @@
+#
+# Description:	Apply changes to nearest item frame according to the player's if_invisible score
+# Called by:	armor_statues:second
+# Entity @s:	player
+#
+# Tag the player and an item frame 1 block in front of their eyes
+#
+tag @s add as_selected
+execute anchored eyes positioned ^ ^ ^1 as @e[type=#armor_statues:item_frames,distance=..1,tag=!as_locked,sort=nearest,limit=1,nbt=!{Invulnerable:1b},nbt={Item:{Count:1b}}] unless entity @s[tag=!if_fixed,nbt={Fixed:1b}] run tag @s add as_selected
+#
+# Copy the trigger score to the selected item frame
+#
+scoreboard players operation @e[type=#armor_statues:item_frames,tag=as_selected] if_invisible = @s if_invisible
+#
+# Makes item frame 1 block in front of you invisible if it has an item
+#
+execute if entity @s[scores={if_invisible=1}] as @e[type=#armor_statues:item_frames,tag=as_selected,nbt=!{Invisible:1b}] run function armor_statues:item_frames/invisible
+#
+# Item frame fixing
+#
+# Creative
+execute if entity @s[scores={if_invisible=2..3},gamemode=creative] as @e[type=#armor_statues:item_frames,tag=as_selected] run function armor_statues:item_frames/fixed
+# Enabled
+execute if score #fixing_enabled as_angle matches 1 if entity @s[scores={if_invisible=2..3},gamemode=survival] as @e[type=#armor_statues:item_frames,tag=as_selected] run function armor_statues:item_frames/fixed
+# Disabled
+execute if score #fixing_enabled as_angle matches 0 if entity @s[scores={if_invisible=2..3},gamemode=survival] as @p[tag=as_selected] run function armor_statues:player_message {\
+    message: '{\
+        "text":"Must be enabled from admin menu",\
+        "color":"dark_red"\
+    }'\
+}
+#
+# Reset item frame's trigger score and remove selected tag from player and item frame
+#
+scoreboard players reset @e[type=#armor_statues:item_frames,tag=as_selected] if_invisible
+tag @s remove as_selected
+tag @e[type=#armor_statues:item_frames,tag=as_selected] remove as_selected
+#
+# Reset player's trigger score and re-enable
+#
+scoreboard players set @s if_invisible 0
+scoreboard players enable @s if_invisible

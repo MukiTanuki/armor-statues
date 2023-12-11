@@ -1,0 +1,31 @@
+
+{
+  "type": "minecraft:loot",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "storage",
+                "source": "armor_statues:book_data"
+              },
+              "ops": [
+                {
+                  "source": "tag",
+                  "target": "{}",
+                  "op": "merge"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
