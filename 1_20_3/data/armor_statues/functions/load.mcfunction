@@ -66,14 +66,10 @@ execute if data storage customizable_armor_stands:settings as_admin{fixed_item_f
 execute if data storage customizable_armor_stands:settings as_admin{fixed_item_frame:"Disabled"} run scoreboard players set #fixing_enabled as_angle 0
 execute if data storage customizable_armor_stands:settings as_admin{uuid_lock:"Enabled"} run scoreboard players set #uuid_locking as_angle 1
 execute if data storage customizable_armor_stands:settings as_admin{uuid_lock:"Disabled"} run scoreboard players set #uuid_locking as_angle 0
-#execute if data storage customizable_armor_stands:settings as_admin run data remove storage customizable_armor_stands:settings as_admin
+execute if data storage customizable_armor_stands:settings as_admin run data remove storage customizable_armor_stands:settings as_admin
 #
 # Sets storage settings
 #
-#execute unless data storage customizable_armor_stands:settings as_admin.book_craft run data modify storage customizable_armor_stands:settings as_admin.book_craft set value "Enabled"
-#execute unless data storage customizable_armor_stands:settings as_admin.book_help run data modify storage customizable_armor_stands:settings as_admin.book_help set value "Disabled"
-#execute unless data storage customizable_armor_stands:settings as_admin.fixed_item_frame run data modify storage customizable_armor_stands:settings as_admin.fixed_item_frame set value "Disabled"
-#execute unless data storage customizable_armor_stands:settings as_admin.uuid_lock run data modify storage customizable_armor_stands:settings as_admin.uuid_lock set value "Disabled"
 execute unless score #undo_states as_angle matches 0.. run scoreboard players set #undo_states as_angle 10
 execute unless score #animate_trigger as_angle matches 0.. run scoreboard players set #animate_trigger as_angle 0
 # book nbt storage
