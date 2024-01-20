@@ -1,0 +1,28 @@
+[
+	{
+		"function": "minecraft:set_nbt",
+		"tag":"{wand:1, Enchantments: [{}]}"
+	},
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"text": "Pointer Wand"
+		}
+	},
+	{
+		"function": "minecraft:set_lore",
+		"entity": "this",
+		"lore": [
+			["",
+			{"text":"Point at "},
+			{"translate":"entity.minecraft.armor_stand"},
+			{"text":" to use"}]
+		],
+		"replace": true
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag":"{CustomModelData:10}"
+	}
+]
