@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "armor_statues",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:armor_stand"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:stick",
+    "components": {
+      "minecraft:custom_data": {
+        "wand":1
+      },
+      "minecraft:enchantment_glint_override": true,
+			"minecraft:max_stack_size": 1,
+      "minecraft:custom_model_data": {
+        "strings": [
+          "armor_statues:pointer_wand"
+        ]
+      },
+      "minecraft:custom_name": "Pointer Wand",
+      "minecraft:lore": [
+        ["", {"text":"Point at "}, {"translate":"entity.minecraft.armor_stand"}, {"text":" to use"}]
+      ]
+    }
+  }
+}

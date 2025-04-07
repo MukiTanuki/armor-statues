@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "armor_statues",
+  "ingredients": [
+    "minecraft:warped_fungus_on_a_stick",
+    "minecraft:armor_stand"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:warped_fungus_on_a_stick",
+    "components": {
+      "minecraft:custom_data": {
+        "wand":1,
+        "type":0
+      },
+      "minecraft:enchantment_glint_override": true,
+			"minecraft:max_stack_size": 1,
+      "minecraft:custom_model_data": {
+        "strings": [
+          "armor_statues:adjustment_wand_0"
+        ]
+      },
+      "minecraft:custom_name": "Adjustment Wand: X axis",
+      "minecraft:lore": [
+        ["", {"keybind":"key.sneak"}, {"text":"+"}, {"keybind":"key.use"}, {"text":" to set mode"}]
+      ]
+    }
+  }
+}

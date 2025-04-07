@@ -29,9 +29,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"This book allows you to apply basic settings to an armor stand. Clicking the coloured links will adjust the closest armor stand within three blocks.","color":"yellow"
                                 }
@@ -47,13 +47,13 @@
                         "text":"\u293a",
                         "bold":true,
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1200"
+                            "command":"/trigger as_trigger set 1200"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":{
+                            "value":{
                                 "text":"Undo",
                                 "color":"yellow"
                             }
@@ -68,13 +68,13 @@
                         "text":"\u27f2",
                         "bold":true,
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_repeat set 1"
+                            "command":"/trigger as_repeat set 1"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":{
+                            "value":{
                                 "text":"Repeat","color":"yellow"
                             }
                         }
@@ -88,13 +88,13 @@
                         "text":"\u293b",
                         "bold":true,
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1201"
+                            "command":"/trigger as_trigger set 1201"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":{
+                            "value":{
                                 "text":"Redo",
                                 "color":"yellow"
                             }
@@ -113,9 +113,9 @@
                     {
                         "text":"\nStyles",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"2"
+                            "page":2
                         }
                     },
                     {
@@ -125,18 +125,18 @@
                     {
                         "text":"Auto Align",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"7"
+                            "page":7
                         }
                     },
                     
                     {
                         "text":"\nNudge",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"3"
+                            "page":3
                         }
                     },
                     {
@@ -146,18 +146,18 @@
                     {
                         "text":"Swap Slots",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"7"
+                            "page":7
                         }
                     },
                     
                     {
                         "text":"\nRotation",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"4"
+                            "page":4
                         }
                     },
                     {
@@ -167,18 +167,18 @@
                     {
                         "text":"Mirror/Flip",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"8"
+                            "page":8
                         }
                     },
                     
                     {
                         "text":"\nPointing",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"4"
+                            "page":4
                         }
                     },
                     {
@@ -188,18 +188,18 @@
                     {
                         "text":"Utilities",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"8"
+                            "page":8
                         }
                     },
                     
                     {
                         "text":"\nPresets",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"5"
+                            "page":5
                         }
                     },
                     {
@@ -209,9 +209,9 @@
                     {
                         "text":"Scale",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"9"
+                            "page":9
                         }
                     },
                     
@@ -222,9 +222,9 @@
                     {
                         "text":"Adjust",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"6"
+                            "page":6
                         }
                     },
                     {
@@ -234,9 +234,9 @@
                     {
                         "text":"Item Frames",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"9"
+                            "page":9
                         }
                     },
                     {
@@ -250,9 +250,9 @@
                     {
                         "text":"Credits",
                         "color":"dark_aqua",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"10"
+                            "page":10
                         }
                     },
                     {
@@ -266,9 +266,9 @@
                     {
                         "text":"Check Target",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 999"
+                            "command":"/trigger as_trigger set 999"
                         }
                     }
                 ],
@@ -277,9 +277,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {"text":"   ","color":"white"},
@@ -295,9 +295,9 @@
                     {
                         "text":"Yes","color":
                         "dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1"
+                            "command":"/trigger as_trigger set 1"
                         }
                     },
                     {
@@ -307,9 +307,9 @@
                     {
                         "text":"No",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 2"
+                            "command":"/trigger as_trigger set 2"
                         }
                     },
                     {
@@ -323,9 +323,9 @@
                     {
                         "text":"Yes",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 3"
+                            "command":"/trigger as_trigger set 3"
                         }
                     },
                     {
@@ -335,9 +335,9 @@
                     {
                         "text":"No",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 4"
+                            "command":"/trigger as_trigger set 4"
                         }
                     },
                     {
@@ -351,9 +351,9 @@
                     {
                         "text":"Yes",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 5"
+                            "command":"/trigger as_trigger set 5"
                         }
                     },
                     {
@@ -363,9 +363,9 @@
                     {
                         "text":"No",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 6"
+                            "command":"/trigger as_trigger set 6"
                         }
                     },
                     {
@@ -379,9 +379,9 @@
                     {
                         "text":"Yes",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 7"
+                            "command":"/trigger as_trigger set 7"
                         }
                     },
                     {
@@ -391,9 +391,9 @@
                     {
                         "text":"No",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 8"
+                            "command":"/trigger as_trigger set 8"
                         }
                     },
                     {
@@ -407,9 +407,9 @@
                     {
                         "text":"Yes",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 9"
+                            "command":"/trigger as_trigger set 9"
                         }
                     },
                     {
@@ -419,9 +419,9 @@
                     {
                         "text":"No",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 10"
+                            "command":"/trigger as_trigger set 10"
                         }
                     },
                     {
@@ -435,9 +435,9 @@
                     {
                         "text":"Yes",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 13"
+                            "command":"/trigger as_trigger set 13"
                         }
                     },
                     {
@@ -447,9 +447,9 @@
                     {
                         "text":"No",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 14"
+                            "command":"/trigger as_trigger set 14"
                         }
                     }
                 ],
@@ -458,9 +458,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -478,9 +478,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Turn gravity off before nudging the Y-position.\n\nRelative Aligned nudging moves the armor stand relative to the player's position and aligned to the block grid.  (X=Left/Right, Z=Away/Towards)\n\nRelative Aligned nudging moves the armor stand relative to the player's exact position.  (X=Left/Right, Y=Above/Below, Z=Away/Towards)\n\nNudges are in 16ths of a block to align with the pixels of the block textures.","color":"yellow"
                                 }
@@ -498,9 +498,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 40"
+                            "command":"/trigger as_trigger set 40"
                         }
                     },
                     {
@@ -510,9 +510,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 101"
+                            "command":"/trigger as_trigger set 101"
                         }
                     },
                     {
@@ -522,9 +522,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 102"
+                            "command":"/trigger as_trigger set 102"
                         }
                     },
                     {
@@ -534,9 +534,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 113"
+                            "command":"/trigger as_trigger set 113"
                         }
                     },
                     {
@@ -546,9 +546,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 114"
+                            "command":"/trigger as_trigger set 114"
                         }
                     },
                     {
@@ -558,9 +558,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 103"
+                            "command":"/trigger as_trigger set 103"
                         }
                     },
                     {
@@ -570,9 +570,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 104"
+                            "command":"/trigger as_trigger set 104"
                         }
                     },
                     {
@@ -582,9 +582,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 43"
+                            "command":"/trigger as_trigger set 43"
                         }
                     },
                     {
@@ -598,9 +598,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 44"
+                            "command":"/trigger as_trigger set 44"
                         }
                     },
                     {
@@ -610,9 +610,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 105"
+                            "command":"/trigger as_trigger set 105"
                         }
                     },
                     {
@@ -622,9 +622,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 106"
+                            "command":"/trigger as_trigger set 106"
                         }
                     },
                     {
@@ -634,9 +634,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 115"
+                            "command":"/trigger as_trigger set 115"
                         }
                     },
                     {
@@ -646,9 +646,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 116"
+                            "command":"/trigger as_trigger set 116"
                         }
                     },
                     {
@@ -658,9 +658,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 107"
+                            "command":"/trigger as_trigger set 107"
                         }
                     },
                     {
@@ -670,9 +670,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 108"
+                            "command":"/trigger as_trigger set 108"
                         }
                     },
                     {
@@ -682,9 +682,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 47"
+                            "command":"/trigger as_trigger set 47"
                         }
                     },
                     {
@@ -698,9 +698,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 48"
+                            "command":"/trigger as_trigger set 48"
                         }
                     },
                     {
@@ -710,9 +710,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 109"
+                            "command":"/trigger as_trigger set 109"
                         }
                     },
                     {
@@ -722,9 +722,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 110"
+                            "command":"/trigger as_trigger set 110"
                         }
                     },
                     {
@@ -734,9 +734,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 117"
+                            "command":"/trigger as_trigger set 117"
                         }
                     },
                     {
@@ -746,9 +746,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 118"
+                            "command":"/trigger as_trigger set 118"
                         }
                     },
                     {
@@ -758,9 +758,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 111"
+                            "command":"/trigger as_trigger set 111"
                         }
                     },
                     {
@@ -770,9 +770,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 112"
+                            "command":"/trigger as_trigger set 112"
                         }
                     },
                     {
@@ -782,9 +782,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 51"
+                            "command":"/trigger as_trigger set 51"
                         }
                     },
                     {
@@ -802,9 +802,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1100"
+                            "command":"/trigger as_trigger set 1100"
                         }
                     },
                     {
@@ -814,9 +814,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1101"
+                            "command":"/trigger as_trigger set 1101"
                         }
                     },
                     {
@@ -826,9 +826,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1102"
+                            "command":"/trigger as_trigger set 1102"
                         }
                     },
                     {
@@ -838,9 +838,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1130"
+                            "command":"/trigger as_trigger set 1130"
                         }
                     },
                     {
@@ -850,9 +850,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1131"
+                            "command":"/trigger as_trigger set 1131"
                         }
                     },
                     {
@@ -862,9 +862,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1103"
+                            "command":"/trigger as_trigger set 1103"
                         }
                     },
                     {
@@ -874,9 +874,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1104"
+                            "command":"/trigger as_trigger set 1104"
                         }
                     },
                     {
@@ -886,9 +886,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1105"
+                            "command":"/trigger as_trigger set 1105"
                         }
                     },
                     {
@@ -902,9 +902,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1106"
+                            "command":"/trigger as_trigger set 1106"
                         }
                     },
                     {
@@ -914,9 +914,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1107"
+                            "command":"/trigger as_trigger set 1107"
                         }
                     },
                     {
@@ -926,9 +926,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1108"
+                            "command":"/trigger as_trigger set 1108"
                         }
                     },
                     {
@@ -938,9 +938,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1132"
+                            "command":"/trigger as_trigger set 1132"
                         }
                     },
                     {
@@ -950,9 +950,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1133"
+                            "command":"/trigger as_trigger set 1133"
                         }
                     },
                     {
@@ -962,9 +962,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1109"
+                            "command":"/trigger as_trigger set 1109"
                         }
                     },
                     {
@@ -974,9 +974,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1110"
+                            "command":"/trigger as_trigger set 1110"
                         }
                     },
                     {
@@ -986,9 +986,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1111"
+                            "command":"/trigger as_trigger set 1111"
                         }
                     },
                     {
@@ -1010,9 +1010,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1112"
+                            "command":"/trigger as_trigger set 1112"
                         }
                     },
                     {
@@ -1022,9 +1022,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1113"
+                            "command":"/trigger as_trigger set 1113"
                         }
                     },
                     {
@@ -1034,9 +1034,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1114"
+                            "command":"/trigger as_trigger set 1114"
                         }
                     },
                     {
@@ -1046,9 +1046,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1134"
+                            "command":"/trigger as_trigger set 1134"
                         }
                     },
                     {
@@ -1058,9 +1058,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1135"
+                            "command":"/trigger as_trigger set 1135"
                         }
                     },
                     {
@@ -1070,9 +1070,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1115"
+                            "command":"/trigger as_trigger set 1115"
                         }
                     },
                     {
@@ -1082,9 +1082,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1116"
+                            "command":"/trigger as_trigger set 1116"
                         }
                     },
                     {
@@ -1094,9 +1094,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1117"
+                            "command":"/trigger as_trigger set 1117"
                         }
                     },
                     {
@@ -1110,9 +1110,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1118"
+                            "command":"/trigger as_trigger set 1118"
                         }
                     },
                     {
@@ -1122,9 +1122,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1119"
+                            "command":"/trigger as_trigger set 1119"
                         }
                     },
                     {
@@ -1134,9 +1134,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1120"
+                            "command":"/trigger as_trigger set 1120"
                         }
                     },
                     {
@@ -1146,9 +1146,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1136"
+                            "command":"/trigger as_trigger set 1136"
                         }
                     },
                     {
@@ -1158,9 +1158,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1137"
+                            "command":"/trigger as_trigger set 1137"
                         }
                     },
                     {
@@ -1170,9 +1170,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1121"
+                            "command":"/trigger as_trigger set 1121"
                         }
                     },
                     {
@@ -1182,9 +1182,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1122"
+                            "command":"/trigger as_trigger set 1122"
                         }
                     },
                     {
@@ -1194,9 +1194,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1123"
+                            "command":"/trigger as_trigger set 1123"
                         }
                     },
                     {
@@ -1210,9 +1210,9 @@
                     {
                         "text":"⁻8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1124"
+                            "command":"/trigger as_trigger set 1124"
                         }
                     },
                     {
@@ -1222,9 +1222,9 @@
                     {
                         "text":"⁻3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1125"
+                            "command":"/trigger as_trigger set 1125"
                         }
                     },
                     {
@@ -1234,9 +1234,9 @@
                     {
                         "text":"⁻1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1126"
+                            "command":"/trigger as_trigger set 1126"
                         }
                     },
                     {
@@ -1246,9 +1246,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1138"
+                            "command":"/trigger as_trigger set 1138"
                         }
                     },
                     {
@@ -1258,9 +1258,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1139"
+                            "command":"/trigger as_trigger set 1139"
                         }
                     },
                     {
@@ -1270,9 +1270,9 @@
                     {
                         "text":"⁺1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1127"
+                            "command":"/trigger as_trigger set 1127"
                         }
                     },
                     {
@@ -1282,9 +1282,9 @@
                     {
                         "text":"⁺3",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1128"
+                            "command":"/trigger as_trigger set 1128"
                         }
                     },
                     {
@@ -1294,9 +1294,9 @@
                     {
                         "text":"⁺8",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1129"
+                            "command":"/trigger as_trigger set 1129"
                         }
                     },
                     {"text":""}
@@ -1306,9 +1306,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -1326,9 +1326,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"The angle step (default 15\u00b0) is used for both the stand rotation and the pose adjustments.\n\nToward and Away turn the armor stand to face toward or away from you.",
                                     "color":"yellow"
@@ -1343,9 +1343,9 @@
                     {
                         "text":"<<",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 56"
+                            "command":"/trigger as_trigger set 56"
                         }
                     },
                     {
@@ -1355,9 +1355,9 @@
                     {
                         "text":"45\u00b0",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 120"
+                            "command":"/trigger as_trigger set 120"
                         }
                     },
                     {
@@ -1367,9 +1367,9 @@
                     {
                         "text":"15\u00b0",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 121"
+                            "command":"/trigger as_trigger set 121"
                         }
                     },
                     {
@@ -1379,9 +1379,9 @@
                     {
                         "text":"5\u00b0",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 122"
+                            "command":"/trigger as_trigger set 122"
                         }
                     },
                     {
@@ -1391,9 +1391,9 @@
                     {
                         "text":"1\u00b0",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 123"
+                            "command":"/trigger as_trigger set 123"
                         }
                     },
                     {
@@ -1403,9 +1403,9 @@
                     {
                         "text":">>",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 57"
+                            "command":"/trigger as_trigger set 57"
                         }
                     },
                     {
@@ -1415,9 +1415,9 @@
                     {
                         "text":"Toward",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 124"
+                            "command":"/trigger as_trigger set 124"
                         }
                     },
                     {
@@ -1427,9 +1427,9 @@
                     {
                         "text":"Away",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 125"
+                            "command":"/trigger as_trigger set 125"
                         }
                     },
                     {
@@ -1447,9 +1447,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Points selected appendage at head or feet.","color":"yellow"
                                 }
@@ -1458,14 +1458,14 @@
                     },
                     {
                         "text":"\nGet Pointer Wand",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger pointer_wand"
+                            "command":"/trigger pointer_wand"
                         },
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Use an Armor Stand and a Stick in a crafting table to craft a Pointer Wand.","color":"yellow"
                                 }
@@ -1487,9 +1487,9 @@
                     {
                         "text":"Head",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1160"
+                            "command":"/trigger as_trigger set 1160"
                         }
                     },
                     {
@@ -1499,9 +1499,9 @@
                     {
                         "text":"Feet",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1166"
+                            "command":"/trigger as_trigger set 1166"
                         }
                     },
                     {
@@ -1519,9 +1519,9 @@
                     {
                         "text":"Head",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1161"
+                            "command":"/trigger as_trigger set 1161"
                         }
                     },
                     {
@@ -1531,9 +1531,9 @@
                     {
                         "text":"Feet",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1167"
+                            "command":"/trigger as_trigger set 1167"
                         }
                     },
                     {
@@ -1551,9 +1551,9 @@
                     {
                         "text":"Head",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1162"
+                            "command":"/trigger as_trigger set 1162"
                         }
                     },
                     {
@@ -1563,9 +1563,9 @@
                     {
                         "text":"Feet",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1168"
+                            "command":"/trigger as_trigger set 1168"
                         }
                     },
                     {
@@ -1583,9 +1583,9 @@
                     {
                         "text":"Head",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1163"
+                            "command":"/trigger as_trigger set 1163"
                         }
                     },
                     {
@@ -1595,9 +1595,9 @@
                     {
                         "text":"Feet",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1169"
+                            "command":"/trigger as_trigger set 1169"
                         }
                     },
                     {
@@ -1615,9 +1615,9 @@
                     {
                         "text":"Head",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1164"
+                            "command":"/trigger as_trigger set 1164"
                         }
                     },
                     {
@@ -1627,9 +1627,9 @@
                     {
                         "text":"Feet",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1170"
+                            "command":"/trigger as_trigger set 1170"
                         }
                     },
                     {
@@ -1647,9 +1647,9 @@
                     {
                         "text":"Head",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1165"
+                            "command":"/trigger as_trigger set 1165"
                         }
                     },
                     {
@@ -1659,9 +1659,9 @@
                     {
                         "text":"Feet",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1171"
+                            "command":"/trigger as_trigger set 1171"
                         }
                     }
                 ],
@@ -1670,9 +1670,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -1690,9 +1690,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"The Death pose is for a figure lying down and requires a separate armor stand for the legs.\n\nRandomized creates a completely unique randomized custom pose.\n\nThe Block and Item presets are designed to hold blocks and items in line with the world grid.",
                                     "color":"yellow"
@@ -1703,9 +1703,9 @@
                     {
                         "text":"\n\nAttention",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 20"
+                            "command":"/trigger as_trigger set 20"
                         }
                     },
                     {
@@ -1715,17 +1715,17 @@
                     {
                         "text":"Confident",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 30"
+                            "command":"/trigger as_trigger set 30"
                         }
                     },
                     {
                         "text":"\nWalking",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 21"
+                            "command":"/trigger as_trigger set 21"
                         }
                     },
                     {
@@ -1735,17 +1735,17 @@
                     {
                         "text":"Salute",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 31"
+                            "command":"/trigger as_trigger set 31"
                         }
                     },
                     {
                         "text":"\nRunning",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 22"
+                            "command":"/trigger as_trigger set 22"
                         }
                     },
                     {
@@ -1755,17 +1755,17 @@
                     {
                         "text":"Death",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 32"
+                            "command":"/trigger as_trigger set 32"
                         }
                     },
                     {
                         "text":"\nPointing",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 23"
+                            "command":"/trigger as_trigger set 23"
                         }
                     },
                     {
@@ -1775,17 +1775,17 @@
                     {
                         "text":"Facepalm",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 33"
+                            "command":"/trigger as_trigger set 33"
                         }
                     },
                     {
                         "text":"\nBlocking",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 24"
+                            "command":"/trigger as_trigger set 24"
                         }
                     },
                     {
@@ -1795,17 +1795,17 @@
                     {
                         "text":"Lazing",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 34"
+                            "command":"/trigger as_trigger set 34"
                         }
                     },
                     {
                         "text":"\nLungeing",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 25"
+                            "command":"/trigger as_trigger set 25"
                         }
                     },
                     {
@@ -1815,17 +1815,17 @@
                     {
                         "text":"Confused",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 35"
+                            "command":"/trigger as_trigger set 35"
                         }
                     },
                     {
                         "text":"\nWinning",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 26"
+                            "command":"/trigger as_trigger set 26"
                         }
                     },
                     {
@@ -1835,17 +1835,17 @@
                     {
                         "text":"Formal",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 36"
+                            "command":"/trigger as_trigger set 36"
                         }
                     },
                     {
                         "text":"\nSitting",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 27"
+                            "command":"/trigger as_trigger set 27"
                         }
                     },
                     {
@@ -1855,17 +1855,17 @@
                     {
                         "text":"Sad",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 37"
+                            "command":"/trigger as_trigger set 37"
                         }
                     },
                     {
                         "text":"\nArabesque",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 28"
+                            "command":"/trigger as_trigger set 28"
                         }
                     },
                     {
@@ -1875,17 +1875,17 @@
                     {
                         "text":"Joyous",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 38"
+                            "command":"/trigger as_trigger set 38"
                         }
                     },
                     {
                         "text":"\nCupid",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 29"
+                            "command":"/trigger as_trigger set 29"
                         },
                         "underlined":true
                     },
@@ -1897,9 +1897,9 @@
                     {
                         "text":"Stargazing",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 39"
+                            "command":"/trigger as_trigger set 39"
                         },
                         "underlined":true
                     },
@@ -1910,17 +1910,17 @@
                     {
                         "text":"Randomized",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1150"
+                            "command":"/trigger as_trigger set 1150"
                         }
                     },
                     {
                         "text":"\nBlock",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 141"
+                            "command":"/trigger as_trigger set 141"
                         }
                     },
                     {
@@ -1930,9 +1930,9 @@
                     {
                         "text":"Item",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 142"
+                            "command":"/trigger as_trigger set 142"
                         }
                     }
                 ],
@@ -1941,9 +1941,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -1961,9 +1961,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"The angle step set for adjusting the stand rotation is also used for the pose adjustments.",
                                     "color":"yellow"
@@ -1973,14 +1973,14 @@
                     },
                     {
                         "text":"\nGet Adjustment Wand",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger adjustment_wand"
+                            "command":"/trigger adjustment_wand"
                         },
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Use an Armor Stand and a Warped Fungus On a Stick in a crafting table to craft an Adjustment Wand.","color":"yellow"
                                 }
@@ -2022,8 +2022,8 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{"action":"run_command",
-                        "value":"/trigger as_trigger set 60"}
+                        "click_event":{"action":"run_command",
+                        "command":"/trigger as_trigger set 60"}
                     },
                     {
                         "text":" .",
@@ -2032,9 +2032,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 61"
+                            "command":"/trigger as_trigger set 61"
                         }
                     },
                     {
@@ -2044,9 +2044,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 62"
+                            "command":"/trigger as_trigger set 62"
                         }
                     },
                     {
@@ -2056,9 +2056,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 63"
+                            "command":"/trigger as_trigger set 63"
                         }
                     },
                     {
@@ -2068,9 +2068,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 64"
+                            "command":"/trigger as_trigger set 64"
                         }
                     },
                     {
@@ -2080,9 +2080,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 65"
+                            "command":"/trigger as_trigger set 65"
                         }
                     },
                     {
@@ -2096,9 +2096,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 67"
+                            "command":"/trigger as_trigger set 67"
                         }
                     },
                     {
@@ -2108,9 +2108,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 66"
+                            "command":"/trigger as_trigger set 66"
                         }
                     },
                     {
@@ -2120,9 +2120,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 68"
+                            "command":"/trigger as_trigger set 68"
                         }
                     },
                     {
@@ -2132,9 +2132,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 69"
+                            "command":"/trigger as_trigger set 69"
                         }
                     },
                     {
@@ -2144,9 +2144,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 70"
+                            "command":"/trigger as_trigger set 70"
                         }
                     },
                     {
@@ -2156,9 +2156,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 71"
+                            "command":"/trigger as_trigger set 71"
                         }
                     },
                     {
@@ -2172,9 +2172,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 72"
+                            "command":"/trigger as_trigger set 72"
                         }
                     },
                     {
@@ -2184,9 +2184,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 73"
+                            "command":"/trigger as_trigger set 73"
                         }
                     },
                     {
@@ -2196,9 +2196,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 74"
+                            "command":"/trigger as_trigger set 74"
                         }
                     },
                     {
@@ -2208,9 +2208,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 75"
+                            "command":"/trigger as_trigger set 75"
                         }
                     },
                     {
@@ -2220,9 +2220,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 77"
+                            "command":"/trigger as_trigger set 77"
                         }
                     },
                     {
@@ -2232,9 +2232,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 76"
+                            "command":"/trigger as_trigger set 76"
                         }
                     },
                     {
@@ -2248,9 +2248,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 78"
+                            "command":"/trigger as_trigger set 78"
                         }
                     },
                     {
@@ -2260,9 +2260,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 79"
+                            "command":"/trigger as_trigger set 79"
                         }
                     },
                     {
@@ -2272,9 +2272,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 81"
+                            "command":"/trigger as_trigger set 81"
                         }
                     },
                     {
@@ -2284,9 +2284,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 80"
+                            "command":"/trigger as_trigger set 80"
                         }
                     },
                     {
@@ -2296,9 +2296,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 82"
+                            "command":"/trigger as_trigger set 82"
                         }
                     },
                     {
@@ -2308,9 +2308,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 83"
+                            "command":"/trigger as_trigger set 83"
                         }
                     },
                     {
@@ -2324,9 +2324,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 84"
+                            "command":"/trigger as_trigger set 84"
                         }
                     },
                     {
@@ -2336,9 +2336,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 85"
+                            "command":"/trigger as_trigger set 85"
                         }
                     },
                     {
@@ -2348,9 +2348,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 87"
+                            "command":"/trigger as_trigger set 87"
                         }
                     },
                     {
@@ -2360,9 +2360,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 86"
+                            "command":"/trigger as_trigger set 86"
                         }
                     },
                     {
@@ -2372,9 +2372,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 89"
+                            "command":"/trigger as_trigger set 89"
                         }
                     },
                     {
@@ -2384,9 +2384,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 88"
+                            "command":"/trigger as_trigger set 88"
                         }
                     },
                     {
@@ -2400,9 +2400,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 90"
+                            "command":"/trigger as_trigger set 90"
                         }
                     },
                     {
@@ -2412,9 +2412,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 91"
+                            "command":"/trigger as_trigger set 91"
                         }
                     },
                     {
@@ -2424,9 +2424,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 92"
+                            "command":"/trigger as_trigger set 92"
                         }
                     },
                     {
@@ -2436,9 +2436,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 93"
+                            "command":"/trigger as_trigger set 93"
                         }
                     },
                     {
@@ -2448,9 +2448,9 @@
                     {
                         "text":"-",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 94"
+                            "command":"/trigger as_trigger set 94"
                         }
                     },
                     {
@@ -2460,9 +2460,9 @@
                     {
                         "text":"+",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 95"
+                            "command":"/trigger as_trigger set 95"
                         }
                     }
                 ],
@@ -2471,9 +2471,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -2491,9 +2491,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Pose and position an armor stand to align a held block or item with an adjacent block.",
                                     "color":"yellow"
@@ -2508,13 +2508,13 @@
                     {
                         "text":"Block on surface",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 151"
+                            "command":"/trigger as_trigger set 151"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Align an armor stand placed on a surface so that a block held by it appears on the surface.",
                                     "color":"yellow"
@@ -2529,13 +2529,13 @@
                     {
                         "text":"Item on surface",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 152"
+                            "command":"/trigger as_trigger set 152"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Align an armor stand placed on a surface so that an item held by it appears upright on the surface.",
                                     "color":"yellow"
@@ -2550,13 +2550,13 @@
                     {
                         "text":"Item flat on surface",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 153"
+                            "command":"/trigger as_trigger set 153"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Align an armor stand placed on a surface so that a non-tool item held by it appears flat on the surface.",
                                     "color":"yellow"
@@ -2571,13 +2571,13 @@
                     {
                         "text":"Tool flat on surface",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 154"
+                            "command":"/trigger as_trigger set 154"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Align an armor stand placed on a surface so that a tool held by it appears flat on the surface.",
                                     "color":"yellow"
@@ -2592,13 +2592,13 @@
                     {
                         "text":"Tool rack",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 155"
+                            "command":"/trigger as_trigger set 155"
                         },
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Align an armor stand with a tripwire hook on the wall above it so that a tool held by it appears to be hanging up.\n\nAlso locks the armor stand and disables all slots except the mainhand.",
                                     "color":"yellow"
@@ -2621,9 +2621,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Swap items between equipment slots",
                                     "color":"yellow"
@@ -2642,9 +2642,9 @@
                     {
                         "text":"<->",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 161"
+                            "command":"/trigger as_trigger set 161"
                         }
                     },
                     {
@@ -2662,9 +2662,9 @@
                     {
                         "text":"<->",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 162"
+                            "command":"/trigger as_trigger set 162"
                         }
                     },
                     {
@@ -2677,9 +2677,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -2697,9 +2697,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Mirroring copies the arm or leg pose from left to right or vice versa. Flipping reverses the armor stand's pose entirely.",
                                     "color":"yellow"
@@ -2722,9 +2722,9 @@
                     {
                         "text":"L>R",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 131"
+                            "command":"/trigger as_trigger set 131"
                         }
                     },
                     {
@@ -2734,9 +2734,9 @@
                     {
                         "text":"R>L",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 132"
+                            "command":"/trigger as_trigger set 132"
                         }
                     },
                     {
@@ -2754,9 +2754,9 @@
                     {
                         "text":"L>R",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 133"
+                            "command":"/trigger as_trigger set 133"
                         }
                     },
                     {
@@ -2766,9 +2766,9 @@
                     {
                         "text":"R>L",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 134"
+                            "command":"/trigger as_trigger set 134"
                         }
                     },
                     {
@@ -2778,9 +2778,9 @@
                     {
                         "text":"<-Flip->",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 135"
+                            "command":"/trigger as_trigger set 135"
                         }
                     },
                     {
@@ -2798,9 +2798,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Copying an armor stand stores it's settings and pose in the book and these can then be pasted into another armor stand. The book must be the selected item in your mainhand or offhand for this to work.\n\nLocking an armor stand prevents it from being changed using the book and disables interaction with the equipment slots.\n\nSealing an armor stand, which is only available in creative mode, does the same and in addition makes it invulnerable",
                                     "color":"yellow"
@@ -2815,9 +2815,9 @@
                     {
                         "text":"Copy",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1004"
+                            "command":"/trigger as_trigger set 1004"
                         }
                     },
                     {
@@ -2827,9 +2827,9 @@
                     {
                         "text":"Paste",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1005"
+                            "command":"/trigger as_trigger set 1005"
                         }
                     },
                     {
@@ -2839,9 +2839,9 @@
                     {
                         "text":"Lock",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1000"
+                            "command":"/trigger as_trigger set 1000"
                         }
                     },
                     {
@@ -2851,9 +2851,9 @@
                     {
                         "text":"Unlock",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1001"
+                            "command":"/trigger as_trigger set 1001"
                         }
                     },
                     {
@@ -2863,9 +2863,9 @@
                     {
                         "text":"Seal",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/function armor_statues:sealing/seal"
+                            "command":"/function armor_statues:sealing/seal"
                         }
                     },
                     {
@@ -2875,9 +2875,9 @@
                     {
                         "text":"Unseal",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/function armor_statues:sealing/unseal"
+                            "command":"/function armor_statues:sealing/unseal"
                         }
                     }
                 ],
@@ -2886,9 +2886,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -2906,9 +2906,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Scale changes the size of the Armor Stand (this is seperate from the Small attribute).",
                                     "color":"yellow"
@@ -2923,9 +2923,9 @@
                     {
                         "text":"⁻.5",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1300"
+                            "command":"/trigger as_trigger set 1300"
                         }
                     },
                     {
@@ -2935,9 +2935,9 @@
                     {
                         "text":"⁻.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1301"
+                            "command":"/trigger as_trigger set 1301"
                         }
                     },
                     {
@@ -2947,9 +2947,9 @@
                     {
                         "text":"⁻.01",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1302"
+                            "command":"/trigger as_trigger set 1302"
                         }
                     },
                     {
@@ -2959,9 +2959,9 @@
                     {
                         "text":"⁺.01",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1303"
+                            "command":"/trigger as_trigger set 1303"
                         }
                     },
                     {
@@ -2971,9 +2971,9 @@
                     {
                         "text":"⁺.1",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1304"
+                            "command":"/trigger as_trigger set 1304"
                         }
                     },
                     {
@@ -2983,9 +2983,9 @@
                     {
                         "text":"⁺.5",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger as_trigger set 1305"
+                            "command":"/trigger as_trigger set 1305"
                         }
                     },
                     {
@@ -3007,9 +3007,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"To make an item frame invisible it must be one block in front of the players eyes and have an item in the frame.\nAlternatively you can also enter:\n/trigger if_invisible\nTo make the item frame visible remove its item.\n\nMust be in creative to make item frame Fixed, or have it enabled from the admin menu.",
                                     "color":"yellow"
@@ -3024,9 +3024,9 @@
                     {
                         "text":"Invisible item frame",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger if_invisible set 1"
+                            "command":"/trigger if_invisible set 1"
                         }
                     },
                     {
@@ -3044,9 +3044,9 @@
                     {
                         "text":"Yes",
                         "color":"dark_green",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger if_invisible set 2"
+                            "command":"/trigger if_invisible set 2"
                         }
                     },
                     {
@@ -3056,9 +3056,9 @@
                     {
                         "text":"No",
                         "color":"red",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"run_command",
-                            "value":"/trigger if_invisible set 3"
+                            "command":"/trigger if_invisible set 3"
                         }
                     },
                     {
@@ -3071,9 +3071,9 @@
                     {
                         "text":"\u00ab",
                         "color":"light_purple",
-                        "clickEvent":{
+                        "click_event":{
                             "action":"change_page",
-                            "value":"1"
+                            "page":1
                         }
                     },
                     {
@@ -3091,9 +3091,9 @@
                     {
                         "text":"\u24be",
                         "color":"dark_purple",
-                        "hoverEvent":{
+                        "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                                 {
                                     "text":"Click on names for links.",
                                     "color":"yellow"
@@ -3114,9 +3114,9 @@
                         "text":"Phssthpok",
                         "color":"#87325d",
                         "bold":true,
-                        "clickEvent":{
+                        "click_event":{
                             "action":"open_url",
-                            "value":"https://twitter.com/MCPhssthpok"
+                            "url":"https://twitter.com/MCPhssthpok"
                         }
                     },
                     {
@@ -3143,9 +3143,9 @@
                         "text":"MSpaceDev",
                         "color":"#e30000",
                         "bold":true,
-                        "clickEvent":{
+                        "click_event":{
                             "action":"open_url",
-                            "value":"https://www.youtube.com/c/MinecraftSpace"
+                            "url":"https://www.youtube.com/c/MinecraftSpace"
                         }
                     },
                     {
@@ -3172,9 +3172,9 @@
                         "text":"MukiTanuki",
                         "color":"#0072e5",
                         "bold":true,
-                        "clickEvent":{
+                        "click_event":{
                             "action":"open_url",
-                            "value":"https://twitter.com/MukiTanuki"
+                            "url":"https://twitter.com/MukiTanuki"
                         }
                     }
                 ]
