@@ -50,15 +50,15 @@ scoreboard players set #var-1 as_angle -1
 #
 # Admin settings
 #
-execute unless score #book_uncraftable as_angle matches 0..1 run scoreboard players set #book_uncraftable as_angle 1
+execute unless score #book_uncraftable as_angle matches 0..1 run scoreboard players set #book_uncraftable as_angle 0
 execute unless score #help_craftable as_angle matches 0..1 run scoreboard players set #help_craftable as_angle 0
 execute unless score #fixing_enabled as_angle matches 0..1 run scoreboard players set #fixing_enabled as_angle 0
 execute unless score #uuid_locking as_angle matches 0..1 run scoreboard players set #uuid_locking as_angle 0
 execute unless score #wands_disabled as_angle matches 0..1 run scoreboard players set #wands_disabled as_angle 0
-execute unless score #pointer_craftable as_angle matches 0..1 run scoreboard players set #pointer_craftable as_angle 0
-execute unless score #adjustment_craftable as_angle matches 0..1 run scoreboard players set #adjustment_craftable as_angle 0
-execute unless score #pointer_triggerable as_angle matches 0..1 run scoreboard players set #pointer_triggerable as_angle 0
-execute unless score #adjustment_triggerable as_angle matches 0..1 run scoreboard players set #adjustment_triggerable as_angle 0
+execute unless score #pointer_craftable as_angle matches 0..1 run scoreboard players set #pointer_craftable as_angle 1
+execute unless score #adjustment_craftable as_angle matches 0..1 run scoreboard players set #adjustment_craftable as_angle 1
+execute unless score #pointer_triggerable as_angle matches 0..1 run scoreboard players set #pointer_triggerable as_angle 1
+execute unless score #adjustment_triggerable as_angle matches 0..1 run scoreboard players set #adjustment_triggerable as_angle 1
 execute unless score #scale_min as_angle matches 63..1000 run scoreboard players set #scale_min as_angle 250
 execute unless score #scale_max as_angle matches 1000..16000 run scoreboard players set #scale_max as_angle 3000
 #
