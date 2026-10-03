@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": [ "minecraft:stick" ],
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "wand": 1
+                    }
+                }
+            }
+        }
+    }
+}

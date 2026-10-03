@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:equipment": {
+          "mainhand": {
+            "items": "minecraft:written_book",
+            "predicates": {
+              "minecraft:custom_data": {
+                "datapack": "ArmorStatuesV2"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:equipment": {
+          "offhand": {
+            "items": "minecraft:written_book",
+            "predicates": {
+              "minecraft:custom_data": {
+                "datapack": "ArmorStatuesV2"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

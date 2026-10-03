@@ -3,10 +3,10 @@
 		"pack_format": 18,
 		"supported_formats": {
 			"min_inclusive": 18,
-			"max_inclusive": 107.1
+			"max_inclusive": 121.0
 		},
 		"min_format": 18,
-		"max_format": 107.1,
+		"max_format": 121.0,
 		"description": [{"text":"Armor Statues","color":"gold"},{"text":"\n","color":"yellow"}]
 	},
 	"overlays": {
@@ -71,6 +71,15 @@
 				"max_format": 9999999,
 				"formats": {
 					"min_inclusive": 107.1,
+					"max_inclusive": 9999999
+				}
+			},
+			{
+				"directory": "26_3",
+				"min_format": 121.0,
+				"max_format": 9999999,
+				"formats": {
+					"min_inclusive": 121.0,
 					"max_inclusive": 9999999
 				}
 			}

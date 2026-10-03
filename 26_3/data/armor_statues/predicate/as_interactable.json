@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "minecraft:nbt": "{Tags: [ \"as_interactable\" ]}",
+        "minecraft:entity_type": "minecraft:interaction"
+    }
+}

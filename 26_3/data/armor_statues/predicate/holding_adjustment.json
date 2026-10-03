@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": [ "minecraft:warped_fungus_on_a_stick" ],
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "wand": 1
+                    }
+                }
+            }
+        }
+    }
+}

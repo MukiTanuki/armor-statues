@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "container.0": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "datapack": "ArmorStatuesV2",
+                "SavedPose": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "block": "minecraft:redstone_wire"
+        }
+      }
+    }
+  ]
+}

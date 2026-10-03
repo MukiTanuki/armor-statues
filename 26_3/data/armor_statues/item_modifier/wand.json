@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:copy_custom_data",
+	"source": {
+		"type": "context",
+		"target": "this"
+	},
+	"ops": [
+		{
+			"source": "UUID",
+			"target": "LastUsed",
+			"op": "replace"
+		}
+	]
+}

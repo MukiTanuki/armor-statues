@@ -1,0 +1,53 @@
+{
+	"type": "minecraft:sequence",
+	"functions": [
+		{
+			"type": "minecraft:set_custom_data",
+			"tag": {
+				"wand": 1
+			}
+		},
+		{
+			"type": "minecraft:set_components",
+			"components": {
+				"minecraft:enchantment_glint_override": true,
+				"minecraft:max_stack_size": 1
+			}
+		},
+		{
+			"type": "minecraft:set_custom_model_data",
+			"strings": {
+				"values": [
+					"armor_statues:pointer_wand"
+				],
+				"mode": "replace_all"
+			}
+		},
+		{
+			"type": "minecraft:set_name",
+			"entity": "this",
+			"name": {
+				"text": "Pointer Wand"
+			}
+		},
+		{
+			"type": "minecraft:set_lore",
+			"entity": "this",
+			"lore": [
+				[
+					"",
+					{
+						"text": "Point at "
+					},
+					{
+						"translate": "entity.minecraft.armor_stand"
+					},
+					{
+						"text": " to use"
+					}
+				]
+			],
+			"mode": "replace_all"
+		}
+	]
+}

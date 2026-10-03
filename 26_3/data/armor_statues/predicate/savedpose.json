@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "armor_statues:savedpose_mainhand",
+    "armor_statues:savedpose_offhand"
+  ]
+}

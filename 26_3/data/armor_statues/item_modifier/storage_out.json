@@ -1,0 +1,39 @@
+{
+	"type": "minecraft:sequence",
+	"functions": [
+		{
+			"type": "minecraft:copy_custom_data",
+			"source": {
+				"type": "storage",
+				"source": "armor_statues:book_storage"
+			},
+			"ops": [
+				{
+					"source": "SavedItem.components.minecraft:custom_data.SavedPose",
+					"target": "SavedPose",
+					"op": "replace"
+				},
+				{
+					"source": "SavedItem.components.minecraft:custom_data.UndoStates",
+					"target": "UndoStates",
+					"op": "replace"
+				},
+				{
+					"source": "SavedItem.components.minecraft:custom_data.RedoStates",
+					"target": "RedoStates",
+					"op": "replace"
+				},
+				{
+					"source": "SavedItem.components.minecraft:custom_data.StatesUUID",
+					"target": "StatesUUID",
+					"op": "replace"
+				},
+				{
+					"source": "SavedItem.components.minecraft:custom_data.Repeat",
+					"target": "Repeat",
+					"op": "replace"
+				}
+			]
+		}
+	]
+}
