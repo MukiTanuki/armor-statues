@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values": [
+		{
+			"id": "minecraft:interaction",
+			"required": true
+		},
+		{
+			"id": "minecraft:block_display",
+			"required": true
+		}
+	]
+}
