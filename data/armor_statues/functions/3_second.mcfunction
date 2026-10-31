@@ -31,7 +31,7 @@ execute as @e[type=minecraft:armor_stand,tag=as_interactable] at @s unless entit
 #
 # Resets stray interactable and block entities
 #
-execute as @e[type=#armor_statues:interactable,type=!minecraft:armor_stand,tag=as_interactable] at @s unless entity @p[predicate=armor_statues:holding_wand,distance=..8] run kill @s
+execute as @e[type=#armor_statues:selectable,type=!minecraft:armor_stand,tag=as_interactable] at @s unless entity @p[predicate=armor_statues:holding_wand,distance=..16] run kill @s
 #
 # turns armor stands with names visible
 #
